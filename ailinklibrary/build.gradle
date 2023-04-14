@@ -1,5 +1,8 @@
-apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
+
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
 android {
     compileSdkVersion 31
 
@@ -21,8 +24,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility '1.8'
-        targetCompatibility '1.8'
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     sourceSets {
@@ -30,7 +33,22 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
+//    afterEvaluate {
+//        publishing {
+//            publications {
+//                release(MavenPublication) {
+//                    from components.release
+//                    groupId = 'com.github.elinkthings' //your git id
+//                    artifactId = 'AILinkSDKRepositoryAndroid' //your-repository
+//                    version = '1.11.2' // As same as the Tag
+//                }
+//            }
+//        }
+//    }
+
 }
+
+
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
