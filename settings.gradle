@@ -1,1 +1,2 @@
-include ':app', ':ailinklibrary'
+include ':app'
+include ':ailinklibrary'
