@@ -32,18 +32,6 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
-//    afterEvaluate {
-//        publishing {
-//            publications {
-//                release(MavenPublication) {
-//                    from components.release
-//                    groupId = 'com.github.elinkthings' //your git id
-//                    artifactId = 'AILinkSDKRepositoryAndroid' //your-repository
-//                    version = '1.11.2' // As same as the Tag
-//                }
-//            }
-//        }
-//    }
 
 }
 
@@ -56,15 +44,15 @@ dependencies {
 }
 
 
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            release(MavenPublication) {
-//                from components.release
-//                groupId = 'com.github.elinkthings' //groupId 随便取
-//                artifactId = 'AILinkSDKRepositoryAndroid'  //artifactId 随便取
-//                version = '1.11.2'
-//            }
-//        }
-//    }
-//}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.elinkthings' //groupId 随便取
+                artifactId = 'AILinkSDKRepositoryAndroid'  //artifactId 随便取
+                version = "1.11.5"
+            }
+        }
+    }
+}
