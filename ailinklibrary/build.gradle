@@ -49,8 +49,8 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.elinkthings' //groupId 随便取
-                artifactId = 'AILinkSDKRepositoryAndroid'  //artifactId 随便取
+                groupId = 'com.github.elinkthings'
+                artifactId = 'AILinkSDKRepositoryAndroid'
                 version = "1.11.5"
             }
         }
