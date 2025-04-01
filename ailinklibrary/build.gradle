@@ -51,7 +51,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.elinkthings'
                 artifactId = 'AILinkSDKRepositoryAndroid'
-                version = "1.14.20"
+                version = "1.14.24"
             }
         }
     }
