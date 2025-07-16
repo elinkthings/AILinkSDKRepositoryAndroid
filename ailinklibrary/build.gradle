@@ -10,7 +10,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 34
         versionCode 1
-        versionName "1.15.00"
+        versionName "1.15.01"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
@@ -51,7 +51,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.elinkthings'
                 artifactId = 'AILinkSDKRepositoryAndroid'
-                version = "1.15.00"
+                version = "1.15.01"
             }
         }
     }
