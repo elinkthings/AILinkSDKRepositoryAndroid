@@ -3,14 +3,14 @@ plugins {
     id 'maven-publish'
 }
 android {
-    compileSdkVersion 34
+    compileSdkVersion 35
 
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 35
         versionCode 1
-        versionName "1.15.01"
+        versionName "1.15.02"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
@@ -51,7 +51,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.elinkthings'
                 artifactId = 'AILinkSDKRepositoryAndroid'
-                version = "1.15.01"
+                version = "1.15.02"
             }
         }
     }
